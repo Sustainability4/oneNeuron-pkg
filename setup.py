@@ -9,7 +9,7 @@ PROJECT_NAME = "oneNeuron-pkg"
 
 setuptools.setup(
     name=f"{PKG_NAME}-{USER_NAME}",
-    version="0.0.2",
+    version="0.0.3",
     author=USER_NAME,
     author_email="sunny.c17hawke@gmail.com",
     description="A small package for perceptron",
