@@ -5,11 +5,19 @@
 
 name: Upload Python Package
 
+# On everypush in the main branch this setup will start doing its job 
 on:
   push:
     branches:
      - main
 
+# It will run the job of deploy on ubuntu-latest
+# and perform the following actions with their names and uses 
+# Its very similar to how we write code in adocker file. 
+# You will be creating an api token from yout pypi login. This is the most standard way of doing things 
+# Copy that token and paste the token in the secrets of your github repository. 
+# You can access that token here then. 
+# After commiting all the changes, go to actions and deploy the changes 
 jobs:
   deploy:
     runs-on: ubuntu-latest
